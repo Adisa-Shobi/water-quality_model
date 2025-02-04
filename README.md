@@ -10,7 +10,7 @@ A summary table is included, presenting the results and performance comparison o
 | Train Instance | Engineer Name  | Regularizer  | Optimizer  | Early Stopping  | Dropout Rate | Accuracy  | F1 Score  | Recall  | Precision  |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|------------|
 | Model 1 | Shobi | L2 | Adam | Yes | 0.2 | 70% | 0.559 | 0.451 | 0.736 |
-| Model 2 | Chrisostome | L2 | RMSprop | Yes | 0.4(1st layer) & 0.3(2nd layer) | 0.6687 | 0.3401 | 0.2258 | 0.6885 |
+| Model 2 | Chrisostome | L2 | RMSprop | Yes | 0.4(1st layer) & 0.3(2nd layer) | 66.8% | 0.3401 | 0.2258 | 0.6885 |
 | Model 3 | Josiane | L1 | Adam | Yes | 0.3 | 62% | 0.55 | 1.0 | 0.37 |
 
 ## Model Evaluations
@@ -31,4 +31,5 @@ Chrisostome's model used layer-wise dropout, preventing overfitting better us. b
 
 Josiane's model prioritized recall (1.0), meaning it successfully identified all actual potable water samples, but this came at the cost of precision (0.37), meaning it misclassified some non-potable samples as drinkablehad  due to using L1 regularization which encouraged sparsity, potentially causing instability and early stopping privented overfitting but it might have halted training early, preventing the model from reaching its full potential and fully learned from the data.
 
-## Recording
+## Video Recording
+Link to video: https://drive.google.com/file/d/1iXWgWj-3j65yy0a2oy0JNoHL0ruR0e4T/view?usp=sharing 
