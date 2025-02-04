@@ -9,7 +9,7 @@ A summary table is included, presenting the results and performance comparison o
 
 | Train Instance | Engineer Name  | Regularizer  | Optimizer  | Early Stopping  | Dropout Rate | Accuracy  | F1 Score  | Recall  | Precision  |
 |-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|-----------|------------|
-| Model 1 | Shobi | L2 | Adam | No | 0.2 | 70% | 0.559 | 0.451 | 0.736 |
+| Model 1 | Shobi | L2 | Adam | Yes | 0.2 | 70% | 0.559 | 0.451 | 0.736 |
 | Model 2 | Chrisostome | L2 | RMSprop | Yes | 0.4(1st layer) & 0.3(2nd layer) | 0.6687 | 0.3401 | 0.2258 | 0.6885 |
 | Model 3 | Josiane | L1 | Adam | Yes | 0.3 | 62% | 0.55 | 1.0 | 0.37 |
 
