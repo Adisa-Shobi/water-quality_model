@@ -25,11 +25,25 @@ B. Second, I went with a dropout rate of 0.2 and L2 regularization (0.05) on spe
 
 ### Chrisostome's Model
 
-Chrisostome's model used layer-wise dropout, preventing overfitting better us. but it had the lowest F1 score (0.3401) and recall (0.2258), showing poor generalization.  due to using RMSprop, which maintains per-weight learning rates, might not have been optimal for this dataset compared to Adam. Early stopping prevented excessive training, and also the high dropout on the first layer might have removed too many features, limiting learning capacity.
+Chrisostome's model used layer-wise dropout, preventing overfitting better us. but it had the lowest F1 score (0.3401) and recall (0.2258), showing poor generalization. Using RMSprop, which maintains per-weight learning rates, might not have been optimal for this dataset compared to Adam. Early stopping prevented excessive training, and also the high dropout on the first layer was in regards to the number of neurons on that layer and the subsequent layers adapted accordingly. However it was still not good enough to result into a high performing model.  
 
 ### Josiane's Model
 
 Josiane's model prioritized recall (1.0), meaning it successfully identified all actual potable water samples, but this came at the cost of precision (0.37), meaning it misclassified some non-potable samples as drinkablehad  due to using L1 regularization which encouraged sparsity, potentially causing instability and early stopping privented overfitting but it might have halted training early, preventing the model from reaching its full potential and fully learned from the data.
 
+
+In brief, the whole process in this water quality model highlighted that using the right number of neurons and the right dropout rate need to go with the right optimizer in order to achieve the best performing model.
+
 ## Video Recording
 Link to video: https://drive.google.com/file/d/1iXWgWj-3j65yy0a2oy0JNoHL0ruR0e4T/view?usp=sharing 
+
+# Commits to be checked
+
+### Shobi
+
+### Chrisostome
+- Trained the model and computed performance metrics
+- Explained the choices of dropout, early stopping and learning rate
+- Made comparison with other models
+
+### Josiane
