@@ -50,3 +50,6 @@ Link to video: https://drive.google.com/file/d/1iXWgWj-3j65yy0a2oy0JNoHL0ruR0e4T
 - Made comparison with other models
 
 ### Josiane
+- Created using Colab
+- updating the model architecture
+- adding and explaining the techniques I used, results and comparison
