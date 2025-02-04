@@ -29,6 +29,6 @@ Chrisostome's model used layer-wise dropout, preventing overfitting better us. b
 
 ### Josiane's Model
 
-Josiane's model had the best recall (1.0), meaning it captured all positive cases. However, it suffered from low precision (0.37), indicating many false positives due to using L1 regularization which encouraged sparsity, potentially causing instability and early stopping might have halted training early, preventing the model from reaching its full potential and fully learned from the data.
+Josiane's model prioritized recall (1.0), meaning it successfully identified all actual potable water samples, but this came at the cost of precision (0.37), meaning it misclassified some non-potable samples as drinkablehad  due to using L1 regularization which encouraged sparsity, potentially causing instability and early stopping privented overfitting but it might have halted training early, preventing the model from reaching its full potential and fully learned from the data.
 
 ## Recording
