@@ -40,6 +40,9 @@ Link to video: https://drive.google.com/file/d/1iXWgWj-3j65yy0a2oy0JNoHL0ruR0e4T
 # Commits to be checked
 
 ### Shobi
+- Update: adds earlystopping and explanations for each choice
+- Update: adds recall, precision, f1 score and other metrics
+- Update: paramenter changes for notebook
 
 ### Chrisostome
 - Trained the model and computed performance metrics
